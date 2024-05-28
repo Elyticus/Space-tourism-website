@@ -44,16 +44,22 @@ a {
   right: 0;
   display: flex;
   flex-direction: column;
-  list-style-type: none;
   gap: 2em;
   letter-spacing: 2px;
-  padding: 7.2em 0em 3.2em 3em;
-  width: 200px;
-  height: 78.5vh;
+  width: 55%;
+  height: 100%;
   background-color: rgba(255, 255, 255, 0.041);
   backdrop-filter: blur(2rem);
   margin-top: 0;
   text-align: left;
+}
+
+.navbar_list {
+  list-style-type: none;
+  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
 span {
@@ -66,6 +72,11 @@ span {
   right: 32px;
   cursor: pointer;
   width: 20px;
+  transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+
+.close_navbar_icon:hover {
+  transform: rotate(180deg);
 }
 
 .nav_link {
@@ -140,6 +151,7 @@ span {
 @media all and (min-width: 768px) {
   body {
     background-image: url(./assets/home/background-home-tablet.jpg);
+    height: 100%;
   }
 
   .navbar {
@@ -148,6 +160,19 @@ span {
     align-items: center;
     margin-left: 2em;
     margin-bottom: 4em;
+  }
+
+  .navbar_list {
+    flex-direction: row;
+    position: initial;
+    flex-direction: row;
+    margin: 0;
+    padding: 0 3em;
+    background-color: #131522;
+    height: auto;
+    width: auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
 
   .menu_mobile {
@@ -160,16 +185,6 @@ span {
 
   span {
     display: none;
-  }
-
-  .navbar_menu {
-    position: initial;
-    flex-direction: row;
-    margin: 0;
-    padding: 0 3em;
-    background-color: #131522;
-    height: auto;
-    width: auto;
   }
 
   .close_navbar_icon {
@@ -203,7 +218,7 @@ span {
     margin: 2em 0 2em 2em;
   }
 
-  .navbar_menu {
+  .navbar_list {
     height: auto;
     width: 795px;
     background-color: rgba(255, 255, 255, 0.115);

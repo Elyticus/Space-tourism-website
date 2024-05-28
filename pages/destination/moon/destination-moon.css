@@ -12,6 +12,10 @@ body {
   height: 100%;
 }
 
+.navbar_menu {
+  height: 137.2%;
+}
+
 .destination_pick,
 .destination_list {
   font-family: "Barlow Condensed", sans-serif;
@@ -98,6 +102,7 @@ body {
 @media all and (min-width: 768px) {
   body {
     background-image: url(../../../assets/destination/background-destination-tablet.jpg);
+    height: 100%;
   }
 
   .destination_pick {
@@ -137,7 +142,7 @@ body {
 @media all and (min-width: 1024px) {
   body {
     background-image: url(../../../assets/destination/background-destination-desktop.jpg);
-    /* height: 100vh; */
+    height: 100%;
   }
 
   .destination_main {
