@@ -12,6 +12,11 @@ body {
   height: 100vh;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /* * {
   border: 1px solid red;
 } */
@@ -34,6 +39,7 @@ body {
 
 .navbar_menu {
   position: absolute;
+  z-index: 1;
   top: 0;
   right: 0;
   display: flex;
@@ -64,10 +70,8 @@ span {
 
 .nav_link {
   cursor: pointer;
-}
-
-.nav_link:nth-child(2) {
-  border-right: 3px solid rgb(255, 255, 255);
+  border: 3px solid transparent;
+  display: inline-block;
 }
 
 .nav_link:hover {
@@ -181,15 +185,8 @@ span {
     padding: 2.5em 0;
   }
 
-  /* Border-bottom effect for the "Home" link */
-  .nav_link:nth-child(2) {
-    border-right: none;
-    border-bottom: 3px solid rgb(255, 255, 255);
-  }
-
-  /* Border-bottom effect on hover for all links */
   .nav_link:hover {
-    border-right: none;
+    border-right: 3px solid transparent;
     border-bottom: 3px solid rgb(255, 255, 255);
   }
 }

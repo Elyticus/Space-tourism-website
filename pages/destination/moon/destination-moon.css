@@ -1,0 +1,179 @@
+/* Mobile Design */
+
+body {
+  background-image: url(../../../assets/destination/background-destination-mobile.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Bellefair", serif;
+  text-align: center;
+  margin: 0;
+  height: 100%;
+}
+
+.destination_pick,
+.destination_list {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.destination_list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-left: 0;
+  margin-inline: 3em;
+}
+
+.destination_title {
+  font-size: 3.5rem;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+}
+
+.destination_description {
+  font-family: "Barlow", sans-serif;
+  margin-inline: 2em;
+  line-height: 1.7em;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.637);
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  color: #d0d6f9;
+}
+
+.moon {
+  width: 170px;
+  height: 170px;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-style: preserve-3d;
+  padding: 2em;
+}
+
+.moon_distance,
+.moon_travel {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  color: #d0d6f9;
+}
+
+.moon_km,
+.moon_time {
+  font-family: "Bellefair", serif;
+  font-size: 1.75rem;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.moon_details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5em;
+}
+
+.pick_number {
+  color: rgb(70, 70, 70);
+  margin-bottom: 2em;
+}
+
+/* Moon Animation */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Tablet Design */
+
+@media all and (min-width: 768px) {
+  body {
+    background-image: url(../../../assets/destination/background-destination-tablet.jpg);
+  }
+
+  .destination_pick {
+    display: flex;
+    gap: 1em;
+    margin-left: 2em;
+  }
+
+  .pick_number {
+    display: block;
+  }
+
+  .moon {
+    width: 300px;
+    height: 300px;
+  }
+
+  .destination_list {
+    margin-inline: 15em;
+  }
+
+  .destination_description {
+    margin-inline: 6em;
+  }
+
+  .destination_title {
+    margin-bottom: 0;
+  }
+
+  .moon_details {
+    flex-direction: row;
+  }
+}
+
+/* Desktop Design */
+
+@media all and (min-width: 1024px) {
+  body {
+    background-image: url(../../../assets/destination/background-destination-desktop.jpg);
+    /* height: 100vh; */
+  }
+
+  .destination_main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .destination_pick {
+    font-size: 1.75rem;
+    letter-spacing: 5px;
+  }
+
+  .right_details {
+    width: 445px;
+    text-align: left;
+  }
+
+  .destination_list {
+    width: 100%;
+    margin: 0;
+    justify-content: start;
+    gap: 4em;
+  }
+
+  .destination_description {
+    margin: 0;
+  }
+
+  .moon {
+    width: 330px;
+    height: 330px;
+    padding: 0;
+  }
+
+  .moon_details {
+    justify-content: start;
+  }
+}

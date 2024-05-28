@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../../assets/favicon-32x32.png"
+      href="../../../assets/favicon-32x32.png"
     />
 
     <!-- Google Fonts -->
@@ -35,16 +35,16 @@
     />
 
     <!-- CSS Link -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../../pages/home/style.css" />
+    <link rel="stylesheet" href="../../destination/moon/destination-moon.css" />
 
     <!-- Document Title -->
-    <title>Space tourism website</title>
+    <title>Destination</title>
   </head>
-
   <body>
     <nav id="navbar" class="navbar">
       <div class="logo_container">
-        <img class="nav_logo" src="../../assets/shared/logo.svg" alt="" />
+        <img class="nav_logo" src="../../../assets/shared/logo.svg" alt="" />
       </div>
 
       <div id="navbarMenuEl" class="navbar_display">
@@ -52,54 +52,78 @@
           <img
             id="closeMenuBtn"
             class="close_navbar_icon"
-            src="../../assets/shared/icon-close.svg"
+            src="../../../assets/shared/icon-close.svg"
             alt=""
           />
 
-          <a class="nav_link" href="../home/index.html">
+          <a class="nav_link" href="../../home/index.html">
             <li><span>00</span> Home</li>
           </a>
 
-          <a class="nav_link" href="../destination/moon/destination-moon.html">
+          <a class="nav_link" href="../moon/destination-moon.html">
             <li><span>01</span> Destination</li>
           </a>
 
-          <a class="nav_link" href="../crew/crew.html">
+          <a class="nav_link" href="../../crew/crew.html">
             <li><span>02</span> Crew</li>
           </a>
 
-          <a class="nav_link" href="../technology/tech.html">
+          <a class="nav_link" href="../../technology/tech.html">
             <li><span>03</span> Technology</li>
           </a>
         </ul>
       </div>
 
       <div id="menuMobileIcon" class="menu_mobile">
-        <img src="../../assets/shared/icon-hamburger.svg" alt="" />
+        <img src="../../../assets/shared/icon-hamburger.svg" alt="" />
       </div>
     </nav>
 
-    <main class="main_element">
-      <section class="main_details">
-        <p class="main_motto">So, you want to travel to</p>
-        <h1 class="main_title">Space</h1>
-        <p class="main_description">
-          Let’s face it; if you want to go to space, you might as well genuinely
-          go Explorepace and not hover kind of on the edge of it. Well sit back,
-          and relax because we’ll give you a truly out of this world experience!
+    <main class="destination_main">
+      <section class="left_details">
+        <p class="destination_pick">
+          <span class="pick_number">01</span> Pick your destination
         </p>
+
+        <img
+          class="moon"
+          src="../../../assets/destination/image-moon.webp"
+          alt=""
+        />
       </section>
 
-      <section class="main_section_explore">
-        <div class="hover_me">
-          <a href="../../pages/destination/destination.html">
-            <p class="main_explore">Explore</p>
-          </a>
+      <section class="right_details">
+        <ul class="destination_list">
+          <li>Moon</li>
+          <li>Mars</li>
+          <li>Europa</li>
+          <li>Titan</li>
+        </ul>
+
+        <p class="destination_title">Moon</p>
+
+        <p class="destination_description">
+          See our planet as you’ve never seen it before. A perfect relaxing trip
+          away to help regain perspective and come back refreshed. While you’re
+          there, take in some history by visiting the Luna 2 and Apollo 11
+          landing sites.
+        </p>
+
+        <div class="moon_details">
+          <div class="moon_distance_info">
+            <p class="moon_distance">Avg. distance</p>
+            <p class="moon_km">384,400 km</p>
+          </div>
+
+          <div class="moon_time_info">
+            <p class="moon_travel">Est. travel time</p>
+            <p class="moon_time">3 days</p>
+          </div>
         </div>
       </section>
     </main>
 
-    <!-- JavaScript Link -->
-    <script src="script.js"></script>
+    <script src="../../home/script.js"></script>
+    <script src="../moon/destination-moon.js"></script>
   </body>
 </html>
