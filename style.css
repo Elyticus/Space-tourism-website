@@ -2,14 +2,14 @@
 
 body {
   background-image: url(./assets/home/background-home-mobile.jpg);
-  background-position: center;
+  background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
+  min-height: 100vh;
+  margin: 0;
   color: white;
   font-family: "Bellefair", serif;
   text-align: center;
-  margin: 0;
-  height: 100vh;
+  /* overflow: hidden; */
 }
 
 a {
@@ -52,6 +52,7 @@ a {
   backdrop-filter: blur(2rem);
   margin-top: 0;
   text-align: left;
+  box-sizing: border-box;
 }
 
 .navbar_list {
@@ -151,7 +152,6 @@ span {
 @media all and (min-width: 768px) {
   body {
     background-image: url(./assets/home/background-home-tablet.jpg);
-    height: 100%;
   }
 
   .navbar {
@@ -211,7 +211,6 @@ span {
 @media all and (min-width: 1024px) {
   body {
     background-image: url(./assets/home/background-home-desktop.jpg);
-    height: 95vh;
   }
 
   .navbar {
