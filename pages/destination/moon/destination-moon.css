@@ -6,6 +6,7 @@ body {
   font-family: "Bellefair", serif;
   text-align: center;
   margin: 0;
+  overflow: auto;
 }
 
 .destination_pick,
@@ -78,6 +79,20 @@ body {
   margin-bottom: 2em;
 }
 
+.destination_link {
+  padding-bottom: 1em;
+  border-bottom: 3px solid transparent;
+  color: #d0d6f9;
+}
+
+.destination_link:hover {
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.destination_link:active {
+  color: white;
+}
+
 /* Moon Animation */
 
 @keyframes spin {
@@ -133,6 +148,7 @@ body {
 @media all and (min-width: 1024px) {
   body {
     background-image: url(../../../assets/destination/background-destination-desktop.jpg);
+    overflow: hidden;
   }
 
   .destination_main {
