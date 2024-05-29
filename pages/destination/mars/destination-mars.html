@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../../assets/favicon-32x32.png"
+      href="../../../assets/favicon-32x32.png"
     />
 
     <!-- Google Fonts -->
@@ -35,8 +35,8 @@
     />
 
     <!-- CSS Link -->
-    <link rel="stylesheet" href="../home/style.css" />
-    <link rel="stylesheet" href="destination.css" />
+    <link rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" href="../../destination/moon/destination-moon.css" />
 
     <!-- Document Title -->
     <title>Destination</title>
@@ -44,60 +44,92 @@
   <body>
     <nav id="navbar" class="navbar">
       <div class="logo_container">
-        <img class="nav_logo" src="../../assets/shared/logo.svg" alt="" />
+        <img class="nav_logo" src="../../../assets/shared/logo.svg" alt="" />
       </div>
 
       <div id="navbarMenuEl" class="navbar_display">
-        <ul class="navbar_menu">
+        <ul class="navbar_list">
           <img
             id="closeMenuBtn"
             class="close_navbar_icon"
-            src="../../assets/shared/icon-close.svg"
+            src="../../../assets/shared/icon-close.svg"
             alt=""
           />
 
-          <a class="nav_link" href="../home/index.html">
+          <a class="nav_link" href="../../../index.html">
             <li><span>00</span> Home</li>
           </a>
 
-          <a class="nav_link" href="../destination/destination.html">
+          <a class="nav_link" href="../moon/destination-moon.html">
             <li><span>01</span> Destination</li>
           </a>
 
-          <a class="nav_link" href="../crew/crew.html">
+          <a class="nav_link" href="../../crew/crew-commander.html">
             <li><span>02</span> Crew</li>
           </a>
 
-          <a class="nav_link" href="../technology/tech.html">
+          <a class="nav_link" href="../../technology/technology-vehicle.html">
             <li><span>03</span> Technology</li>
           </a>
         </ul>
       </div>
 
       <div id="menuMobileIcon" class="menu_mobile">
-        <img src="../../assets/shared/icon-hamburger.svg" alt="" />
+        <img src="../../../assets/shared/icon-hamburger.svg" alt="" />
       </div>
     </nav>
 
-    <p>01 Pick your destination</p>
+    <main class="destination_main">
+      <section class="left_details">
+        <p class="destination_pick">
+          <span class="pick_number">01</span> Pick your destination
+        </p>
 
-    <p>Moon</p>
-    <p>Mars</p>
-    <p>Europa</p>
-    <p>Titan</p>
+        <img
+          class="moon"
+          src="../../../assets/destination/image-mars.webp"
+          alt=""
+        />
+      </section>
 
-    <p>Mars</p>
+      <section class="right_details">
+        <ul class="destination_list">
+          <a href="../moon/destination-moon.html">
+            <li class="destination_link">Moon</li>
+          </a>
+          <a href="../mars/destination-mars.html">
+            <li class="destination_link">Mars</li>
+          </a>
+          <a href="../europa/destination-europa.html">
+            <li class="destination_link">Europa</li>
+          </a>
+          <a href="../titan/destination-titan.html">
+            <li class="destination_link">Titan</li>
+          </a>
+        </ul>
 
-    <p>
-      Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus
-      Mons, the tallest planetary mountain in our solar system. It’s two and a
-      half times the size of Everest!
-    </p>
+        <p class="destination_title">Mars</p>
 
-    <p>Avg. distance</p>
-    <p>225 mil. km</p>
+        <p class="destination_description">
+          Don’t forget to pack your hiking boots. You’ll need them to tackle
+          Olympus Mons, the tallest planetary mountain in our solar system. It’s
+          two and a half times the size of Everest!
+        </p>
 
-    <p>Est. travel time</p>
-    <p>9 months</p>
+        <div class="moon_details">
+          <div class="moon_distance_info">
+            <p class="moon_distance">Avg. distance</p>
+            <p class="moon_km">225 mil. km</p>
+          </div>
+
+          <div class="moon_time_info">
+            <p class="moon_travel">Est. travel time</p>
+            <p class="moon_time">9 months</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../../../script.js"></script>
   </body>
 </html>
