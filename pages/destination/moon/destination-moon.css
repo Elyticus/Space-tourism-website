@@ -6,7 +6,12 @@ body {
   font-family: "Bellefair", serif;
   text-align: center;
   margin: 0;
+  height: 100%;
   overflow: auto;
+}
+
+.navbar_menu {
+  height: 125vh;
 }
 
 .destination_pick,
@@ -148,6 +153,7 @@ body {
 @media all and (min-width: 1024px) {
   body {
     background-image: url(../../../assets/destination/background-destination-desktop.jpg);
+    height: 100vh;
     overflow: hidden;
   }
 
