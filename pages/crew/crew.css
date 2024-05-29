@@ -1,0 +1,183 @@
+/* Mobile Design */
+
+body {
+  background-image: url(../../assets/crew/background-crew-mobile.jpg);
+}
+
+.crew_figure {
+  width: auto;
+  height: 223px;
+}
+
+.crew_profile_image {
+  margin: 3em 1em 2em 1em;
+  border-bottom: 1px solid rgb(76, 76, 76);
+}
+
+.navigator_wrapper {
+  display: block;
+  justify-content: center;
+}
+
+.crew_navigation {
+  display: block;
+  margin-bottom: 2em;
+}
+
+.crew_motto {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.crew_number,
+.crew_subtitle {
+  color: rgb(121, 121, 121);
+}
+
+.crew_subtitle,
+.crew_title {
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+}
+
+.crew_title {
+  font-size: 1.5em;
+}
+
+.crew_description {
+  font-family: "Barlow", sans-serif;
+  margin-inline: 1em;
+  color: #d0d6f9;
+  line-height: 1.5em;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* Create a custom radio button */
+input[type="radio"] + label {
+  position: relative;
+  padding: 0.6em;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Style the custom radio button */
+input[type="radio"] + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+/* Style the custom radio button when checked */
+input[type="radio"]:checked + label:before {
+  background-color: gray;
+}
+
+/* Inner circle for the selected radio button */
+input[type="radio"]:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+/* Tablet Design */
+
+@media all and (min-width: 768px) {
+  body {
+    background-image: url(../../assets/crew/background-crew-tablet.jpg);
+  }
+
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .crew_profile_image {
+    border: none;
+  }
+
+  .crew_figure {
+    width: auto;
+    height: 380px;
+  }
+
+  .crew_details {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .crew_motto {
+    display: flex;
+    justify-content: start;
+    margin-left: 2em;
+  }
+
+  .crew_number {
+    display: block;
+  }
+
+  .crew_description {
+    width: 458px;
+    margin: 0 auto 2em;
+  }
+
+  .crew_subtitle {
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .crew_title {
+    margin-top: 0.3em;
+    font-size: 2.5em;
+  }
+}
+
+/* Desktop Design */
+
+@media all and (min-width: 1024px) {
+  body {
+    background-image: url(../../assets/crew/background-crew-desktop.jpg);
+  }
+
+  main {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .crew_details {
+    text-align: left;
+  }
+
+  .crew_figure {
+    height: 29.375rem;
+  }
+
+  .crew_motto {
+    font-size: 1.75em;
+    margin-left: 6.25em;
+    margin-bottom: 0;
+  }
+
+  .crew_description {
+    margin-bottom: 7em;
+  }
+}

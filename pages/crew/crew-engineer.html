@@ -1,27 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <!-- Favicon Link -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/favicon-32x32.png"
+    />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
 
-  02 Meet your crew
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
 
-  Flight Engineer
-  Anousheh Ansari
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
 
-  Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
-  Ansari was the fourth self-funded space tourist, the first self-funded woman to 
-  fly to the ISS, and the first Iranian in space. 
-</body>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../crew/crew.css" />
+
+    <!-- Document Title -->
+    <title>Space tourism website</title>
+  </head>
+
+  <body>
+    <nav id="navbar" class="navbar">
+      <div class="logo_container">
+        <img class="nav_logo" src="../../assets/shared/logo.svg" alt="" />
+      </div>
+
+      <div id="navbarMenuEl" class="navbar_display">
+        <ul class="navbar_list">
+          <img
+            id="closeMenuBtn"
+            class="close_navbar_icon"
+            src="../../assets/shared/icon-close.svg"
+            alt=""
+          />
+
+          <a class="nav_link" href="../../index.html">
+            <li><span>00</span> Home</li>
+          </a>
+
+          <a class="nav_link" href="../destination/moon/destination-moon.html">
+            <li><span>01</span> Destination</li>
+          </a>
+
+          <a class="nav_link" href="../crew/crew-commander.html">
+            <li><span>02</span> Crew</li>
+          </a>
+
+          <a class="nav_link" href="../technology/technology-vehicle.html">
+            <li><span>03</span> Technology</li>
+          </a>
+        </ul>
+      </div>
+
+      <div id="menuMobileIcon" class="menu_mobile">
+        <img src="../../assets/shared/icon-hamburger.svg" alt="" />
+      </div>
+    </nav>
+
+    <p class="crew_motto"><span class="crew_number">02</span> Meet your crew</p>
+
+    <main>
+      <div class="crew_profile_image">
+        <img
+          class="crew_figure"
+          src="../../assets/crew/image-anousheh-ansari.webp"
+          alt=""
+        />
+      </div>
+
+      <div class="crew_details">
+        <div class="navigator_wrapper">
+          <div class="crew_navigation">
+            <input type="radio" id="btn1" name="group1" value="1" checked />
+            <label for="btn1"></label>
+
+            <input type="radio" id="btn2" name="group1" value="2" />
+            <label for="btn2"></label>
+
+            <input type="radio" id="btn3" name="group1" value="3" />
+            <label for="btn3"></label>
+
+            <input type="radio" id="btn4" name="group1" value="4" />
+            <label for="btn4"></label>
+          </div>
+        </div>
+
+        <div class="crew_information">
+          <p class="crew_subtitle">Flight Engineer</p>
+
+          <p class="crew_title">Anousheh Ansari</p>
+
+          <p class="crew_description">
+            Anousheh Ansari is an Iranian American engineer and co-founder of
+            Prodea Systems. Ansari was the fourth self-funded space tourist, the
+            first self-funded woman to fly to the ISS, and the first Iranian in
+            space.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="../../script.js"></script>
+  </body>
 </html>

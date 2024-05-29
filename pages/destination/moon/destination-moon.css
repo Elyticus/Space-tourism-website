@@ -145,6 +145,8 @@ body {
 
   .moon_details {
     flex-direction: row;
+    justify-content: space-around;
+    gap: 0;
   }
 }
 
