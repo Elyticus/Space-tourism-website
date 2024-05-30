@@ -1,32 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <!-- Favicon Link -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../assets/favicon-32x32.png"
+    />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
 
-  03 Space launch 101
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
 
-  1
-  2
-  3
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
 
-  The terminology...
-  Space capsule
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="tech.css" />
 
-  A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
-  capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
-  you'll spend your time during the flight. It includes a space gym, cinema, 
-  and plenty of other activities to keep you entertained.
-</body>
+    <!-- Document Title -->
+    <title>Space tourism website</title>
+  </head>
+
+  <body>
+    <nav id="navbar" class="navbar">
+      <div class="logo_container">
+        <img class="nav_logo" src="../../assets/shared/logo.svg" alt="" />
+      </div>
+
+      <div id="navbarMenuEl" class="navbar_display">
+        <ul class="navbar_list">
+          <img
+            id="closeMenuBtn"
+            class="close_navbar_icon"
+            src="../../assets/shared/icon-close.svg"
+            alt=""
+          />
+
+          <a class="nav_link" href="../../index.html">
+            <li><span>00</span> Home</li>
+          </a>
+
+          <a class="nav_link" href="../destination/moon/destination-moon.html">
+            <li><span>01</span> Destination</li>
+          </a>
+
+          <a class="nav_link" href="../crew/crew-commander.html">
+            <li><span>02</span> Crew</li>
+          </a>
+
+          <a class="nav_link" href="./technology-vehicle.html">
+            <li><span>03</span> Technology</li>
+          </a>
+        </ul>
+      </div>
+
+      <div id="menuMobileIcon" class="menu_mobile">
+        <img src="../../assets/shared/icon-hamburger.svg" alt="" />
+      </div>
+    </nav>
+
+    <p class="tech_motto">
+      <span class="tech_number">03</span> Space launch 101
+    </p>
+
+    <main>
+      <picture>
+        <source
+          media="(max-width: 799px)"
+          width="100%"
+          srcset="../../assets/technology/image-space-capsule-landscape.jpg"
+        />
+
+        <source
+          class="coffee-home"
+          media="(min-width: 1024px)"
+          width="515px"
+          srcset="../../assets/technology/image-space-capsule-portrait.jpg"
+        />
+
+        <img
+          width="100%"
+          class="hero-image-main"
+          src="../../assets/technology/image-space-capsule-landscape.jpg"
+          alt="Image of a coffee"
+        />
+      </picture>
+
+      <div class="tech_left_desktop">
+        <div class="tech_filter">
+          <a href="../technology/technology-vehicle.html">
+            <div class="tech_navigatore"><p class="nav_number">1</p></div>
+          </a>
+
+          <a href="../technology/technology-spaceport.html">
+            <div class="tech_navigatore"><p class="nav_number">2</p></div>
+          </a>
+
+          <a href="../technology/technology-capsule.html">
+            <div class="tech_navigatore"><p class="nav_number">3</p></div>
+          </a>
+        </div>
+
+        <section class="crew_details">
+          <p class="crew_subtitle">The terminology...</p>
+
+          <p class="crew_title">Space capsule</p>
+
+          <p class="crew_description">
+            A space capsule is an often-crewed spacecraft that uses a blunt-body
+            reentry capsule to reenter the Earth's atmosphere without wings. Our
+            capsule is where you'll spend your time during the flight. It
+            includes a space gym, cinema, and plenty of other activities to keep
+            you entertained.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <script src="../../script.js"></script>
+  </body>
 </html>
