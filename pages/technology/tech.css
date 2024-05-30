@@ -33,6 +33,10 @@ body {
   align-items: center;
 }
 
+.tech_number {
+  color: rgb(70, 70, 70);
+}
+
 .tech_navigatore:hover {
   background-color: white;
   color: black;
