@@ -14,14 +14,10 @@ body {
   border-bottom: 1px solid rgb(76, 76, 76);
 }
 
-.navigator_wrapper {
-  display: block;
-  justify-content: center;
-}
-
 .crew_navigation {
-  display: block;
-  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }
 
 .crew_motto {
@@ -55,47 +51,16 @@ body {
   line-height: 1.5em;
 }
 
-input[type="radio"] {
-  display: none;
-}
-
-/* Create a custom radio button */
-input[type="radio"] + label {
-  position: relative;
-  padding: 0.6em;
+.bullet_crew {
   cursor: pointer;
-  display: inline-block;
-}
-
-/* Style the custom radio button */
-input[type="radio"] + label:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #979797;
   border-radius: 50%;
-  background-color: gray;
 }
 
-/* Style the custom radio button when checked */
-input[type="radio"]:checked + label:before {
-  background-color: gray;
-}
-
-/* Inner circle for the selected radio button */
-input[type="radio"]:checked + label:after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #ffffff;
+.active {
+  background-color: white;
 }
 
 /* Tablet Design */
@@ -116,7 +81,7 @@ input[type="radio"]:checked + label:after {
 
   .crew_figure {
     width: auto;
-    height: 380px;
+    height: 420px;
   }
 
   .crew_details {
@@ -168,16 +133,23 @@ input[type="radio"]:checked + label:after {
   }
 
   .crew_figure {
+    width: 410px;
+    box-sizing: border-box;
     height: 29.375rem;
   }
 
   .crew_motto {
     font-size: 1.75em;
-    margin-left: 6.25em;
+    margin-left: 5.7em;
     margin-bottom: 0;
   }
 
   .crew_description {
     margin-bottom: 7em;
+    height: 96px;
+  }
+
+  .crew_navigation {
+    justify-content: start;
   }
 }
